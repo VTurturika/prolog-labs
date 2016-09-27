@@ -20,7 +20,8 @@ printAllRoutes :-
 
 % task 2
 printPairedRoutes :-
-    findall([RouteNum, Dest, Time],route(RouteNum, Dest, Time, paired), Result),
+    read(D),
+    findall([RouteNum, D, Time],route(RouteNum, D, Time, paired), Result),
     write("----------"),nl,
     printList(Result),nl.
 
