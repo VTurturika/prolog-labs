@@ -15,7 +15,7 @@ frame(name(compiled), is_a(programming_lang), [
 
     build_by(compiled),
     run_by(cpu)
-], _).
+], []).
 
 frame(name(interpreted), is_a(programming_lang), [run_by(interpreter)], []).
 
